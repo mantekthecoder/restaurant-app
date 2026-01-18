@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    padding: 0;
+}
+
+header {
+    background-image: url("images/banner.jpg");
+    background-size: 30%;
+    background-position: center;
+    height: 200px;
+    color: white;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 24px 0 12px;
+    text-align: center;
+}
+
+#banner p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#banner {
+    margin: auto auto auto 300px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.menu-img-container {
+    width: 125px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 26px 0;
+    border-bottom: 1px solid #dedede;
+}
+.menu-item-info p {
+    display: block;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: #8B8B8B;
+    margin: 0;
+}
+
+.menu-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item-info .menu-black-display {
+    color: #000;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 400;
+}   
+#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-order-btn {
+    background-color: #fff;
+    color: #3C3C3C;
+    border: 1px solid #DEDEDE;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-order-btn:hover {
+    background-color: #3C3C3C;
+    color: #fff;
+    border-color: #3C3C3C;
+}
+
+.menu-img {
+    width: 105px;
+    display: block;
+}
+
+#menu-container {
+    margin: 20px auto;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.promo-banner {
+    max-width: 600px;
+    margin: 20px auto 10px;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #065F46;
+    background-color: #ECFDF5;
+    border: 1px solid #A7F3D0;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.complete-order-btn {
+    display: block;
+    padding: 18px 40px;
+    border-radius: 5px;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 40px auto 20px auto;
+    transition: all 0.3s ease-in-out;
+    font-weight: 800;
+    max-width: 600px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.complete-order-btn:hover {
+    background-color: #fff;
+    color: #16DB99;
+    border-color: #16DB99;
+    border: 1px solid #16DB99;
+}
+
+#order {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#order h2 {
+    font-size: 1.9rem;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.order-item p {
+    margin: 0;
+}
+
+.order-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+    padding: 10px 0;
+}
+
+.order-total p {
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.price-original {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.price-final {
+    color: #111827;
+    font-weight: 600;
+}
+
+.order-item-discount {
+    background-color: #ECFDF5;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.combo-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    background-color: #A7F3D0;
+    color: #065F46;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.remove-item-btn {
+    background-color: #fff;
+    color: #8B8B8B;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.remove-item-btn:hover {
+    color: #000;
+}
+
+.name-input,
+.phone-input,
+.address-input,
+.card-input,
+.cvv-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#checkout {
+    font-family: Verdana, Tahoma, sans-serif;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#checkout-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.checkout-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    color: #374151;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    border-radius: 50%;
+}
+
+.checkout-close-btn:hover {
+    color: #ef4444;
+    background-color: #fee2e2;
+}
+
+#checkout-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input {
+    padding: 20px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#checkout-header {
+    font-size: 1.6rem;
+    font-weight: 550;
+    margin-left: 60px;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+}
+
+.thank-you-message {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #065F46;
+    text-align: center;
+}
+
+#thank-you-container {
+    background-color: #ECFDF5;
+    max-width: 550px;
+    max-height: 140px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin: auto auto 30px auto;
+    display: none;
+}
+

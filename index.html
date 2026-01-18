@@ -1,0 +1,46 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div id="banner"></div>
+        </header>
+        <main>
+            <div class="promo-banner">
+                Get 50% OFF in your order: combo hamburger/pizza + beer
+            </div>
+            <div id="menu-container"></div>
+        </main>
+        <section id="order">
+            <div id="order-container"></div>
+        </section>
+        <section id="checkout">
+            <div id="checkout-content">
+                <button id="checkout-close-btn" type="button" class="checkout-close-btn" aria-label="Close checkout">&times;</button>
+                <h4 id="checkout-header">Enter card details</h4>
+                <form id="checkout-form">
+                    <div class="name-input">
+                        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="card-input">
+                        <input id="card-number" name="card-number" type="text" placeholder="Enter card number" required pattern="[0-9]{13,19}">
+                    </div>
+                    <div class="cvv-input">
+                        <input id="cvv" name="cvv" type="text" placeholder="Enter CVV" required pattern="[0-9]{3,4}">
+                    </div>
+                    <button id="pay-button" type="submit" class="complete-order-btn">Pay</button>
+                </form>
+            </div>
+        </section>
+        <section id="thank-you">
+            <div id="thank-you-container">
+            </div>
+        </section>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
